@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: '000'
+      author: diego.santos
+      changes:
+        - sql:
+            sql: CREATE SCHEMA IF NOT EXISTS auth;

@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: '003'
+      author: diego.santos
+      changes:
+        - insert:
+            schemaName: auth
+            tableName: tb_user
+            columns:
+              - column:
+                  name: name
+                  value: "Admin"
+              - column:
+                  name: username
+                  value: "admin"
+              - column:
+                  name: email
+                  value: "admin@local"
+              - column:
+                  name: password
+                  value: "$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG"
+              - column:
+                  name: active
+                  valueBoolean: true
+              - column:
+                  name: role
+                  value: "ADM"
+              - column:
+                  name: created_at
+                  valueDate: "NOW()"
+              - column:
+                  name: updated_at
+                  valueDate: "NOW()"
